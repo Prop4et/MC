@@ -1,0 +1,59 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1418,         49]
+NotebookOptionsPosition[      1064,         35]
+NotebookOutlinePosition[      1467,         51]
+CellTagsIndexPosition[      1424,         48]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"1.1", " ", "sum", " ", "with"}], " ", "+", " ", 
+    RowBox[{"and", " ", "plus"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"1", "+", "2", "+", "3"}], "\[IndentingNewLine]", 
+   RowBox[{"Plus", "[", 
+    RowBox[{"1", ",", "2", ",", "3"}], "]"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.823703859900877*^9, 
+  3.82370392003554*^9}},ExpressionUUID->"4c522b13-759b-4da2-8315-\
+a4c5d5bc2c8d"]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d20b89e4-8745-4665-a665-b29ff3b854cf"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 502, 13, 86, "Input",ExpressionUUID->"4c522b13-759b-4da2-8315-a4c5d5bc2c8d"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

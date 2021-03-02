@@ -1,0 +1,169 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6371,        161]
+NotebookOptionsPosition[      6014,        147]
+NotebookOutlinePosition[      6417,        163]
+CellTagsIndexPosition[      6374,        160]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", "3.1", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Range", "[", "4", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.2", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Range", "[", "100", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.3", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Reverse", "[", 
+    RowBox[{"Range", "[", "4", "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.4", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Reverse", "[", 
+    RowBox[{"Range", "[", "50", "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.5", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"Range", "[", "4", "]"}], ",", " ", 
+     RowBox[{"Reverse", "[", 
+      RowBox[{"Range", "[", "4", "]"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.6", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"range100", " ", "=", " ", 
+     RowBox[{"Range", "[", "100", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"reverse100", "  ", "=", " ", 
+     RowBox[{"Reverse", "[", "range100", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"join100", " ", "=", " ", 
+     RowBox[{"Join", "[", 
+      RowBox[{"range100", ",", " ", "reverse100"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"ListPlot", "[", "join100", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.7", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"myseed", "=", 
+     RowBox[{"SeedRandom", "[", "3", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"RandomInteger", "[", "10", "]"}], " ", "gives", " ", "one", " ",
+      "pseudorandom", " ", "integer", " ", "in", " ", "the", " ", "range", 
+     " ", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "10"}], "}"}]}], "*)"}], "\n", 
+   RowBox[{"myrand", "=", 
+    RowBox[{"RandomInteger", "[", "10", "]"}]}], "\n", 
+   RowBox[{"Range", "[", "myrand", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"RandomInteger", "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "10"}], "}"}], "]"}], " ", "gives", " ", "one", " ", 
+     "pseudorandom", " ", "integer", " ", "in", " ", "the", " ", "range", " ", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "10"}], "}"}]}], "*)"}], "\n", 
+   RowBox[{"myrandint", "=", 
+    RowBox[{"RandomInteger", "[", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "10"}], "}"}], "]"}]}], "\n", 
+   RowBox[{"Range", "[", "myrandint", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.8", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Range", "[", "10", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.9", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Range", "[", "5", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.10", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"Range", "[", "10", "]"}], ",", " ", 
+     RowBox[{"Range", "[", "10", "]"}], ",", " ", 
+     RowBox[{"Range", "[", "5", "]"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "3.11", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"Range", "[", "20", "]"}], ",", " ", 
+      RowBox[{"Reverse", "[", 
+       RowBox[{"Range", "[", "20", "]"}], "]"}]}], "]"}], " ", "\[Equal]", 
+    " ", 
+    RowBox[{"Reverse", "[", 
+     RowBox[{"Join", "[", 
+      RowBox[{
+       RowBox[{"Range", "[", "20", "]"}], ",", 
+       RowBox[{"Reverse", "[", 
+        RowBox[{"Range", "[", "20", "]"}], "]"}]}], "]"}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "3.1"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "2", ",", " ", "3", ",", " ", "4"}], "}"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "3.2"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"Range", "[", "5", "]"}], ",", " ", 
+     RowBox[{"Reverse", "[", 
+      RowBox[{"Range", "[", "4", "]"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "3.3"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"Reverse", "[", 
+      RowBox[{"Range", "[", "3", "]"}], "]"}], ",", " ", 
+     RowBox[{"Reverse", "[", 
+      RowBox[{"Range", "[", "4", "]"}], "]"}], ",", " ", 
+     RowBox[{"Reverse", "[", 
+      RowBox[{"Range", "[", "5", "]"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "3.4"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"ListPlot", "[", 
+    RowBox[{"Range", "[", 
+     RowBox[{"10", ",", " ", "14"}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "3.5"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"Range", "[", "10", "]"}], ",", " ", 
+     RowBox[{"Reverse", "[", 
+      RowBox[{"Range", "[", "10", "]"}], "]"}], ",", " ", 
+     RowBox[{"Range", "[", "10", "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.823708554023448*^9, 3.823708823774314*^9}, {
+  3.8237088740516195`*^9, 3.8237089375172515`*^9}, {3.8237089711203375`*^9, 
+  3.8237089803693547`*^9}, {3.8237090247483745`*^9, 3.8237090664710894`*^9}, {
+  3.823709214042892*^9, 3.823709520894188*^9}},
+ CellLabel->
+  "In[267]:=",ExpressionUUID->"ccf3c631-182b-4bc7-9ebc-16be39973195"]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cb8ca35f-ceb1-4520-a28f-3f30fd556c26"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 5452, 125, 789, "Input",ExpressionUUID->"ccf3c631-182b-4bc7-9ebc-16be39973195"]
+}
+]
+*)
+
