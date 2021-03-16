@@ -1,0 +1,296 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11324,        288]
+NotebookOptionsPosition[     10931,        274]
+NotebookOutlinePosition[     11274,        289]
+CellTagsIndexPosition[     11231,        286]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", "5.1", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Reverse", "[", 
+    RowBox[{"Range", "[", 
+     RowBox[{"10", "^", "2"}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.2", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Total", "[", 
+    RowBox[{"Range", "[", 
+     RowBox[{"10", "^", "2"}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.3", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"lp1", "=", 
+     RowBox[{"ListPlot", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Range", "[", "10", "]"}], "^", "2"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "11"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "101"}], "}"}]}], "}"}]}]}], "]"}]}], 
+    ";"}], "\n", 
+   RowBox[{
+    RowBox[{"lp2", "=", 
+     RowBox[{"ListPlot", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Range", "[", "10", "]"}], "^", "2"}], ",", 
+       RowBox[{"PlotRange", "->", 
+        RowBox[{"{", 
+         RowBox[{"All", ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "101"}], "}"}]}], "}"}]}]}], "]"}]}], 
+    ";"}], "\n", 
+   RowBox[{"GraphicsRow", "[", 
+    RowBox[{"{", 
+     RowBox[{"lp1", ",", "lp2"}], "}"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.4", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Sort", "[", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"Range", "[", "4", "]"}], ",", " ", 
+      RowBox[{"Range", "[", "4", "]"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.5", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Plus", "[", 
+     RowBox[{
+      RowBox[{"Range", "[", 
+       RowBox[{"0", ",", " ", "10"}], "]"}], ",", " ", "10"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"k", " ", "=", " ", "10"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"n", " ", "=", " ", "10"}], "\[IndentingNewLine]", 
+   RowBox[{"Range", "[", 
+    RowBox[{"k", ",", " ", 
+     RowBox[{"k", "+", "n"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Clear", "[", 
+     RowBox[{"k", ",", " ", "n"}], "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Range", "[", 
+     RowBox[{"k", ",", " ", 
+      RowBox[{"k", "+", "10"}]}], "]"}], " ", "+", " ", 
+    RowBox[{"(", 
+     RowBox[{"10", " ", "-", " ", "k"}], ")"}]}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.6", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Sort", "[", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Range", "[", "5", "]"}], "^", "2"}], ",", 
+      RowBox[{
+       RowBox[{"Range", "[", "5", "]"}], "^", "3"}]}], "]"}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.7", " ", "*)"}], "\n", 
+   RowBox[{"Length", "[", 
+    RowBox[{"IntegerDigits", "[", 
+     RowBox[{"2", "^", "128"}], "]"}], "]"}], " ", 
+   RowBox[{"(*", 
+    RowBox[{
+    "restituisce", " ", "il", " ", "numero", " ", "di", " ", "cifre"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.8", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"First", "[", 
+    RowBox[{"IntegerDigits", "[", 
+     RowBox[{"2", "^", "32"}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.9", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Take", "[", 
+    RowBox[{
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"2", "^", "100"}], "]"}], ",", " ", "10"}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.10", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Max", "[", 
+    RowBox[{"IntegerDigits", "[", 
+     RowBox[{"2", "^", "20"}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.11", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Count", "[", 
+    RowBox[{
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"2", "^", "1000"}], "]"}], ",", " ", "0"}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.12", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Part", "[", 
+    RowBox[{
+     RowBox[{"Sort", "[", 
+      RowBox[{"IntegerDigits", "[", 
+       RowBox[{"2", "^", "20"}], "]"}], "]"}], ",", " ", "2"}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.13", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"digitList", " ", "=", " ", 
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"2", "^", "128"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"ListLinePlot", "[", 
+    RowBox[{"digitList", ",", " ", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"All", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Min", "[", "digitList", "]"}], "-", "1"}], ",", " ", 
+          RowBox[{
+           RowBox[{"Max", "[", "digitList", "]"}], " ", "+", " ", "1"}]}], 
+         "}"}]}], "}"}]}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "5.14", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"Take", "[", 
+      RowBox[{
+       RowBox[{"Range", "[", "100", "]"}], ",", " ", "20"}], "]"}], ",", " ", 
+     "10"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "5.1"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"3", " ", 
+    RowBox[{"Range", "[", "10", "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "5.2"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Range", "[", "10", "]"}], " ", "*", " ", 
+    RowBox[{"Range", "[", "10", "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "5.3"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Last", "[", 
+    RowBox[{"IntegerDigits", "[", 
+     RowBox[{"2", "^", "37"}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "5.4"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", " ", "=", " ", 
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"2", "^", "32"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Last", "[", 
+    RowBox[{"Most", "[", "list", "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "5.5"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Total", "[", 
+    RowBox[{"IntegerDigits", "[", 
+     RowBox[{"3", "^", "126"}], "]"}], "]"}], " ", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "5.6"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"PieChart", "[", 
+    RowBox[{
+     RowBox[{"IntegerDigits", "[", 
+      RowBox[{"2", "^", "32"}], "]"}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Small"}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "5.7"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"GraphicsRow", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"PieChart", "[", 
+         RowBox[{"IntegerDigits", "[", 
+          RowBox[{"2", "^", "20"}], "]"}], "]"}], ",", " ", 
+        RowBox[{"PieChart", "[", 
+         RowBox[{"IntegerDigits", "[", 
+          RowBox[{"2", "^", "40"}], "]"}], "]"}], ",", " ", 
+        RowBox[{"PieChart", "[", 
+         RowBox[{"IntegerDigits", "[", 
+          RowBox[{"2", "^", "60"}], "]"}], "]"}]}], "}"}], ",", " ", 
+      RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+     "qua", " ", "poi", " ", "usa", " ", "anche", " ", "una", " ", "funzione",
+       " ", "strana", " ", "e", " ", "vediamo", " ", "se", " ", "la", " ", 
+      "spiega", "\[IndentingNewLine]", " ", "si"}], ",", " ", 
+     RowBox[{
+     "in", " ", "pratica", " ", "vuol", " ", "dire", " ", "che", " ", "ho", 
+      " ", "una", " ", "funzione", " ", "che", " ", "prende", " ", "in", " ", 
+      "input", "\[IndentingNewLine]", "una", " ", "variabile", " ", "e", " ", 
+      "quindi", " ", "mi", " ", "fa", " ", "comodo", " ", "per", " ", 
+      "evitare", " ", "di", " ", "scrivere", " ", "tre", " ", "volte", " ", 
+      "la", " ", "stessa", " ", "cosa"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"pcid", "[", "in_", "]"}], " ", ":=", " ", 
+    RowBox[{"PieChart", "[", 
+     RowBox[{
+      RowBox[{"IntegerDigits", "[", "in", "]"}], ",", " ", 
+      RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"il", " ", ":=", " ", 
+      RowBox[{"si", " ", "chiama", " ", "set", " ", "delayed"}]}], ",", " ", 
+     RowBox[{
+     "ossia", " ", "la", " ", "parte", " ", "destra", " ", "viene", " ", 
+      "assegnata", " ", "a", " ", "quella", " ", "sinistra", " ", "in", " ", 
+      "modo", " ", "differito", "\[IndentingNewLine]", "Ossia", " ", "si", 
+      " ", "assegna", " ", "quando", " ", "si", " ", "valuta", " ", "la", " ",
+       "cella", " ", "ma", " ", "la", " ", "valutazione", " ", "poi", " ", 
+      "viene", " ", "effettuata", " ", "solo", " ", "quando", " ", "usiamo", 
+      " ", "effettivamente", " ", "la", " ", "funzione", " ", "passandogli", 
+      " ", "qualcosa"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"GraphicsRow", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"pcid", "[", 
+       RowBox[{"2", "^", "20"}], "]"}], ",", " ", 
+      RowBox[{"pcid", "[", 
+       RowBox[{"2", "^", "40"}], "]"}], ",", " ", 
+      RowBox[{"pcid", "[", 
+       RowBox[{"2", "^", "60"}], "]"}]}], "}"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8241841134094224`*^9, 3.8241841782705917`*^9}, {
+  3.8241842129104595`*^9, 3.824184469671549*^9}, {3.8241845172036953`*^9, 
+  3.8241845651989193`*^9}, {3.824184697515108*^9, 3.824185021845414*^9}, {
+  3.82418513415347*^9, 3.824185387712299*^9}, {3.8241854229674406`*^9, 
+  3.8241854255652776`*^9}, {3.8241854925886726`*^9, 3.8241855340262957`*^9}, {
+  3.824185576435295*^9, 3.8241855876904864`*^9}, {3.8241856644647865`*^9, 
+  3.824185962367488*^9}, {3.82418602845074*^9, 3.824186041957459*^9}, {
+  3.824186472459308*^9, 
+  3.8241867039326887`*^9}},ExpressionUUID->"db20ee4a-6254-4f18-b0fa-\
+bbfc1f8057e5"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.824186546481577*^9, 
+  3.8241865491688166`*^9}},ExpressionUUID->"9542d3b9-fc85-42ba-88df-\
+9d2f05cb793d"]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {64, Automatic}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 10212, 247, 1188, "Input",ExpressionUUID->"db20ee4a-6254-4f18-b0fa-bbfc1f8057e5"],
+Cell[10773, 269, 154, 3, 28, "Input",ExpressionUUID->"9542d3b9-fc85-42ba-88df-9d2f05cb793d"]
+}
+]
+*)
+

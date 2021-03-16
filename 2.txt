@@ -1,0 +1,21 @@
+CAP 2 pt 2
+Il ';' se non serve l'output permette di allineare più statement sulla stessa riga perchè "inibisce" lo statemente che lo precede
+Non si iniziano le variabili con caratteri speciali, il $ è riservato per identificare le variabili di sistema
+f[x_Integer] := x^2, quindi l'underscore è utilizzato per fare le cose nelle funzioni quindi, e basta, non può essere usato per altri motivi, ma sta roba se vede più avanti. In pratica il numero di underscore definisce il numero di variabili ma ripeto, se vede dopo
+Quindi i nomi in mathematica sono combinazioni di caratteri e numeri
+Times e plus a livello di argomenti funzionano allo stesso modo, ossia accettano 0, 1 o infiniti argomenti. Senza argomenti producono l'elemento neutro dell'operazione 
+Siccome vuole che facciamo le cose da informatici vuole che parametrizziamo tutto anzichè mettere i valori direttamente
+Atomi = singoli numeri o singole lettere, mentre una espressione è una combinazione (annidamento) di atomi
+In una lista posso accropare numeri e simboli ma anche numeri di vario tipo
+CAP 3 questo credo
+Listplot plotta i grafici e posso applicarci una equal
+Comunque tutte le plot sono funzioni built in con argomenti obbligatori (asse x e y, in realtà il primo argomento è cosa grafico e il secondo argomento è dove lo grafico) e tantissimi argomenti opzionali tipo i colori e tutti i cazzi
+Esistono un fottio di built in dedicate alle liste, tipo join fa un join semplice di due liste, mantenendo anche i duplicati e crea un listo concatenando praticamente le liste 
+Oh tra diverse liste se possono usa funzioni di interpolazione, interpolazione che serve per cercare di capire da quale funzione provengono un insieme di punti
+il singolo '%' fa riferimento all'output temporalmente valutato immediatamente prima di ciò che sto vedendo, più '%' metto e più in alto salgo temporalmente. Il layout temporale però non coincide con quello spaziale quindi care (la prof lo sconsiglia comunque, ed effettivamente mi posso rendere conto del perchè)
+a -> b è un modo per alterare un argomento opzionale senza riscriverlo, così da variarlo temporaneamnete solo nell'espressione, sta cosa si chiama rule
+-> Rule[]
+:> RuleDelayed[]
+= Set[]
+:= SetDelayed[]
+

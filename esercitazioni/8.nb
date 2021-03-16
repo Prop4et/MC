@@ -1,0 +1,99 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3972,         91]
+NotebookOptionsPosition[      3676,         78]
+NotebookOutlinePosition[      4019,         93]
+CellTagsIndexPosition[      3976,         90]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Ogetti", " ", "grafici"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Ci", " ", "sono", " ", "delle", " ", "direttive", " ", "che", " ", 
+    "definiscono", " ", "gli", " ", "oggetti", " ", "che", " ", "poi", " ", 
+    "vengono", " ", "disegnati", " ", "tramite", " ", "la", " ", "direttiva", 
+    " ", "Graphics"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"Roba", " ", "che", " ", "altera", " ", 
+    RowBox[{"colore", "/", "opacit\[AGrave]"}], " ", "e", " ", "tutte", " ", 
+    "cose", " ", "devono", " ", "essere", " ", "inserite", " ", "prima", " ", 
+    RowBox[{"dell", "'"}], "oggetto", " ", "grafico", " ", "che", " ", "deve",
+     " ", "subire", " ", "quelle", " ", "modifiche"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Module", ":", " ", 
+     RowBox[{"in", " ", "mezzo", " ", 
+      RowBox[{"c", "'"}], "ha", " ", "una", " ", "serie", " ", "di", " ", 
+      "operazioni"}]}], ",", " ", 
+    RowBox[{
+    "vedi", " ", "sul", " ", "libro", " ", "cosa", " ", "fa", " ", 
+     "perch\[EGrave]", " ", "la", " ", "spiegata", " ", "un", " ", 
+     RowBox[{"po", "'"}], " ", "a", " ", "cazzo", " ", "di", " ", "cane", 
+     "\[IndentingNewLine]", "1.", " ", "Lista", " ", "di", " ", "variabili", 
+     " ", "private", " ", "alla", " ", "module", " ", "che", " ", "poi", " ", 
+     "nel", " ", "package", " ", "non", " ", "saranno", " ", "note", " ", 
+     "al", " ", "notebook"}], ",", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"l", "'"}], "area", " ", "di", " ", "dichiarazione", " ", 
+      "\[EGrave]", " ", "anche", " ", "eventuale", " ", "area", " ", "di", 
+      " ", "inizializzazione", "\[IndentingNewLine]", "Andare", " ", "a", " ",
+       "capo", " ", "o", " ", "mettere", " ", "uno", " ", "spazio", " ", 
+      RowBox[{"all", "'"}], "interno", " ", "della", " ", "module", " ", 
+      "viene", " ", "visto", " ", "come", " ", "una", " ", "moltiplicazione", 
+      " ", "quindi", " ", "ogni", " ", "statement", " ", "deve", " ", 
+      "essere", " ", "chiuso", " ", "con", " ", "un"}], " ", ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+     "Dato", " ", "che", " ", "alcuni", " ", "valori", " ", "devono", " ", 
+      "essere", " ", "passati", " ", "in", " ", "input", " ", 
+      RowBox[{"dall", "'"}], "utente", " ", "alcune", " ", "variabili", " ", 
+      "dovranno", " ", "essere", " ", "settate", " ", "dinamicamente", " ", 
+      "e", " ", "quindi", " ", "esiste", " ", "la", " ", "dynamic", " ", 
+      "module"}]}]}], "*)"}], " "}]], "Input",
+ CellChangeTimes->{{3.824790230376778*^9, 3.824790289276762*^9}, {
+  3.824790370875699*^9, 3.824790376236492*^9}, {3.8247905852547464`*^9, 
+  3.824790624489518*^9}, {3.824791452142588*^9, 3.8247915161130304`*^9}, {
+  3.824791632791196*^9, 3.824791641763914*^9}, {3.824791704293858*^9, 
+  3.824791719916757*^9}, {3.8247922826002245`*^9, 3.8247923086214275`*^9}, {
+  3.8247925233093214`*^9, 
+  3.8247925809060435`*^9}},ExpressionUUID->"103c8287-f6c2-478d-9fc1-\
+e5f66b49d4c3"]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3114, 56, 143, "Input",ExpressionUUID->"103c8287-f6c2-478d-9fc1-e5f66b49d4c3"]
+}
+]
+*)
+
