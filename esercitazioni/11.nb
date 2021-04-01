@@ -1,0 +1,182 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6611,        174]
+NotebookOptionsPosition[      6315,        161]
+NotebookOutlinePosition[      6657,        176]
+CellTagsIndexPosition[      6614,        173]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", "11.6", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"myString", "=", "\"\<This is about strings\>\""}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Column", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"StringTake", "[", 
+        RowBox[{"myString", ",", "n"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "0", ",", 
+         RowBox[{"StringLength", "[", "myString", "]"}]}], "}"}]}], "]"}], 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.7", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"s", "=", "\"\<A long time ago, in a galaxy far, far away\>\""}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"BarChart", "[", 
+    RowBox[{
+     RowBox[{"StringLength", "[", 
+      RowBox[{"StringSplit", "[", "s", "]"}], "]"}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "]"}], " ", 
+   RowBox[{"(*", " ", 
+    RowBox[{"al", " ", "posto", " ", "di", " ", 
+     RowBox[{"StringSplit", "[", "]"}], " ", "ci", " ", "pu\[OGrave]", " ", 
+     "anche", " ", "andare", " ", 
+     RowBox[{"TextWord", "[", "]"}]}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.9", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"wdPC", " ", "=", 
+     RowBox[{"WikipediaData", "[", "\"\<computer\>\"", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Length", "[", 
+    RowBox[{"TexWords", "[", "wdPC", "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.10", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"First", "[", 
+    RowBox[{"TextSentences", "[", 
+     RowBox[{"WikipediaData", "[", "\"\<strings\>\"", "]"}], "]"}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.11", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{"StringTake", "[", 
+     RowBox[{
+      RowBox[{"TextSentences", "[", "wdPC", "]"}], ",", "1"}], "]"}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.13", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Count", "[", 
+    RowBox[{
+     RowBox[{"StringTake", "[", 
+      RowBox[{
+       RowBox[{"WordList", "[", "]"}], ",", " ", "1"}], "]"}], ",", " ", 
+     "\"\<q\>\""}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.14", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"ListLinePlot", "[", 
+    RowBox[{"StringLength", "[", 
+     RowBox[{"Take", "[", 
+      RowBox[{
+       RowBox[{"WordList", "[", "]"}], ",", " ", "100"}], "]"}], "]"}], "]"}],
+    "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.16", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"stsrwl", " ", "=", " ", 
+     RowBox[{"StringTake", "[", 
+      RowBox[{
+       RowBox[{"StringReverse", "[", " ", 
+        RowBox[{"WordList", "[", 
+         RowBox[{"Language", "\[Rule]", "\"\<Italian\>\""}], "]"}], "]"}], 
+       ",", " ", "1"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"WordCloud", "[", 
+    RowBox[{"stsrwl", ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.24", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SeedRandom", "[", "3", "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"tri", "[", "___", "]"}], " ", ":=", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"RandomInteger", "[", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", " ", 
+          RowBox[{"Length", "[", 
+           RowBox[{"Alphabet", "[", "]"}], "]"}]}], "}"}], "]"}], ",", " ", 
+       "3"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"fl", "[", "___", "]"}], " ", ":=", " ", 
+     RowBox[{"FromLetterNumber", "[", 
+      RowBox[{"tri", "[", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"fl", "[", "n", "]"}], "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", " ", "10"}], "}"}]}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", "11.25", " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Manipulate", "[", 
+     RowBox[{
+      RowBox[{"Take", "[", 
+       RowBox[{
+        RowBox[{"Alphabet", "[", "\"\<Italian\>\"", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "n"}], "}"}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "1", ",", 
+        RowBox[{"Length", "[", 
+         RowBox[{"Alphabet", "[", "\"\<Italian\>\"", "]"}], "]"}], ",", "1"}],
+        "}"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"list", "=", 
+     RowBox[{"Alphabet", "[", "\"\<Italian\>\"", "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"len", "=", 
+     RowBox[{"Length", "[", "list", "]"}]}], ";"}], "\n", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+       RowBox[{"list", "[", 
+        RowBox[{"[", "n", "]"}], "]"}], ",", "20"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"n", ",", "1", ",", "len", ",", "1"}], "}"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.825566462838359*^9, 3.825566471306762*^9}, {
+  3.8255668516551743`*^9, 3.825567167254263*^9}, {3.8255672618235235`*^9, 
+  3.8255673544522157`*^9}, {3.8255678689510164`*^9, 3.82556796312907*^9}, {
+  3.825568025503987*^9, 3.8255680282460723`*^9}, {3.8255682718482*^9, 
+  3.8255683206530056`*^9}, {3.82556871479676*^9, 3.82556877457663*^9}, {
+  3.8255688335212803`*^9, 3.825568883101553*^9}, {3.8255691077719574`*^9, 
+  3.8255691147049084`*^9}, {3.825569388598065*^9, 3.82556949994948*^9}, {
+  3.8255701637866507`*^9, 3.8255701744701424`*^9}, {3.825570231276411*^9, 
+  3.82557023230204*^9}},
+ CellLabel->
+  "In[180]:=",ExpressionUUID->"91b9b888-9e1b-4f1d-b893-39be0b4fb86d"]
+},
+WindowSize->{759, 858},
+WindowMargins->{{Automatic, 68}, {Automatic, 58}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 5753, 139, 599, "Input",ExpressionUUID->"91b9b888-9e1b-4f1d-b893-39be0b4fb86d"]
+}
+]
+*)
+

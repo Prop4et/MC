@@ -10,14 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3972,         91]
-NotebookOptionsPosition[      3676,         78]
-NotebookOutlinePosition[      4019,         93]
-CellTagsIndexPosition[      3976,         90]
+NotebookDataLength[     14063,        306]
+NotebookOptionsPosition[     13530,        289]
+NotebookOutlinePosition[     13874,        304]
+CellTagsIndexPosition[     13831,        301]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{
   RowBox[{"(*", " ", 
@@ -66,18 +68,227 @@ Cell[BoxData[
       RowBox[{"dall", "'"}], "utente", " ", "alcune", " ", "variabili", " ", 
       "dovranno", " ", "essere", " ", "settate", " ", "dinamicamente", " ", 
       "e", " ", "quindi", " ", "esiste", " ", "la", " ", "dynamic", " ", 
-      "module"}]}]}], "*)"}], " "}]], "Input",
- CellChangeTimes->{{3.824790230376778*^9, 3.824790289276762*^9}, {
-  3.824790370875699*^9, 3.824790376236492*^9}, {3.8247905852547464`*^9, 
-  3.824790624489518*^9}, {3.824791452142588*^9, 3.8247915161130304`*^9}, {
-  3.824791632791196*^9, 3.824791641763914*^9}, {3.824791704293858*^9, 
-  3.824791719916757*^9}, {3.8247922826002245`*^9, 3.8247923086214275`*^9}, {
-  3.8247925233093214`*^9, 
-  3.8247925809060435`*^9}},ExpressionUUID->"103c8287-f6c2-478d-9fc1-\
-e5f66b49d4c3"]
+      "module"}]}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"preincrement", ":", " ", 
+    RowBox[{
+    "fa", " ", "la", " ", "add", " ", "e", " ", "restituisce", " ", "il", " ",
+      "valore", " ", "nuovo", "\[IndentingNewLine]", "increment"}], ":", " ", 
+    RowBox[{
+    "fa", " ", "la", " ", "add", " ", "e", " ", "restituisce", " ", "il", " ",
+      "valore", " ", "vecchio"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "reap", " ", "e", " ", "sow", " ", "sono", " ", "come", " ", "i", " ", 
+     "carabinieri", " ", "che", " ", "vanno", " ", "sempre", " ", "in", " ", 
+     "coppia"}], ",", " ", 
+    RowBox[{
+    "che", " ", "sono", " ", "meglio", " ", "di", " ", "part", " ", "e", " ", 
+     "flatten", " ", "perch\[EGrave]", " ", "part", " ", "e", " ", "flatten", 
+     " ", "funzionano", " ", "coi", " ", "grafici", " ", "solo", " ", "con", 
+     " ", 
+     RowBox[{"l", "'"}], "implementazione", " ", "corrente"}]}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", "8.8", " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"SeedRandom", "[", "1", "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"Graphics", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{
+         RowBox[{"RegularPolygon", "[", "k", "]"}], ",", 
+         RowBox[{"RandomColor", "[", "]"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "8", ",", "3", ",", 
+         RowBox[{"-", "1"}]}], "}"}]}], "]"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{"+", "8.3"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Graphics", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{
+         RowBox[{"RegularPolygon", "[", "k", "]"}], ",", " ", 
+         RowBox[{"RandomColor", "[", "]"}]}], "]"}], ",", " ", 
+       RowBox[{"ImageSize", "\[Rule]", "Tiny"}]}], "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"k", ",", " ", "10", ",", " ", "3", ",", " ", 
+       RowBox[{"-", "1"}]}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8249633884412875`*^9, 3.824963522803105*^9}, {
+  3.824963803682373*^9, 3.8249640238151402`*^9}, {3.824964133718015*^9, 
+  3.8249642313672805`*^9}},ExpressionUUID->"e705d46e-d026-4a5a-b4c1-\
+3a8bc5d84178"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   GraphicsBox[
+    {RGBColor[0.2928697367979225, 0.20805106478059265`, 0.5804744812941587], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{
+         Rational[1, 4] (-1 + 
+           5^Rational[1, 2]), -(Rational[5, 8] + 
+            Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+         Rational[1, 4] (1 + 
+           5^Rational[1, 2]), -(Rational[5, 8] + 
+            Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {1, 0}, {
+         Rational[1, 4] (1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+           Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+         Rational[1, 4] (-1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+           Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+         Rational[1, 4] (1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+           Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+         Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+           Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {-1, 0}, {
+         Rational[1, 4] (-1 - 5^
+           Rational[1, 2]), -(Rational[5, 8] + 
+            Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2]}, {
+         Rational[1, 4] (1 - 5^
+           Rational[1, 2]), -(Rational[5, 8] + 
+            Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2]}}, {{
+         0.30901699437494745`, -0.9510565162951535}, {
+         0.8090169943749475, -0.5877852522924731}, {1, 0}, {
+         0.8090169943749475, 0.5877852522924731}, {0.30901699437494745`, 
+         0.9510565162951535}, {-0.30901699437494745`, 
+         0.9510565162951535}, {-0.8090169943749475, 0.5877852522924731}, {-1, 
+         0}, {-0.8090169943749475, -0.5877852522924731}, \
+{-0.30901699437494745`, -0.9510565162951535}}]],
+      RegularPolygon[10]]},
+    ImageSize->Tiny], ",", 
+   GraphicsBox[
+    {RGBColor[0.1288208346384372, 0.3064273800346182, 0.712012070075779], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{Sin[Rational[1, 9] Pi], -Cos[Rational[1, 9] Pi]}, {
+         Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {
+         Cos[Rational[1, 18] Pi], Sin[Rational[1, 18] Pi]}, {
+         Sin[Rational[2, 9] Pi], Cos[Rational[2, 9] Pi]}, {0, 
+         1}, {-Sin[Rational[2, 9] Pi], Cos[Rational[2, 9] Pi]}, {-
+          Cos[Rational[1, 18] Pi], Sin[Rational[1, 18] Pi]}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {-
+          Sin[Rational[1, 9] Pi], -Cos[Rational[1, 9] Pi]}}, {{
+         0.3420201433256687, -0.9396926207859084}, {
+         0.8660254037844386, -0.5}, {0.984807753012208, 
+         0.17364817766693033`}, {0.6427876096865393, 0.766044443118978}, {0, 
+         1}, {-0.6427876096865393, 0.766044443118978}, {-0.984807753012208, 
+         0.17364817766693033`}, {-0.8660254037844386, -0.5}, \
+{-0.3420201433256687, -0.9396926207859084}}]],
+      RegularPolygon[9]]},
+    ImageSize->Tiny], ",", 
+   GraphicsBox[
+    {RGBColor[0.39058187138007416`, 0.8199672367851796, 0.32535149799529073`], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}, {
+         Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {
+         Cos[Rational[1, 8] Pi], Sin[Rational[1, 8] Pi]}, {
+         Sin[Rational[1, 8] Pi], Cos[Rational[1, 8] Pi]}, {-
+          Sin[Rational[1, 8] Pi], Cos[Rational[1, 8] Pi]}, {-
+          Cos[Rational[1, 8] Pi], Sin[Rational[1, 8] Pi]}, {-
+          Cos[Rational[1, 8] Pi], -Sin[Rational[1, 8] Pi]}, {-
+          Sin[Rational[1, 8] Pi], -Cos[Rational[1, 8] Pi]}}, {{
+        0.3826834323650898, -0.9238795325112867}, {
+        0.9238795325112867, -0.3826834323650898}, {0.9238795325112867, 
+        0.3826834323650898}, {0.3826834323650898, 
+        0.9238795325112867}, {-0.3826834323650898, 
+        0.9238795325112867}, {-0.9238795325112867, 
+        0.3826834323650898}, {-0.9238795325112867, -0.3826834323650898}, \
+{-0.3826834323650898, -0.9238795325112867}}]],
+      RegularPolygon[8]]},
+    ImageSize->Tiny], ",", 
+   GraphicsBox[
+    {RGBColor[0.593260227507795, 0.5187741670401635, 0.1690130168777495], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{Sin[Rational[1, 7] Pi], -Cos[Rational[1, 7] Pi]}, {
+         Cos[Rational[1, 14] Pi], -Sin[Rational[1, 14] Pi]}, {
+         Cos[Rational[3, 14] Pi], Sin[Rational[3, 14] Pi]}, {0, 
+         1}, {-Cos[Rational[3, 14] Pi], Sin[Rational[3, 14] Pi]}, {-
+          Cos[Rational[1, 14] Pi], -Sin[Rational[1, 14] Pi]}, {-
+          Sin[Rational[1, 7] Pi], -Cos[Rational[1, 7] Pi]}}, {{
+         0.4338837391175581, -0.9009688679024191}, {
+         0.9749279121818236, -0.2225209339563144}, {0.7818314824680298, 
+         0.6234898018587335}, {0, 1}, {-0.7818314824680298, 
+         0.6234898018587335}, {-0.9749279121818236, -0.2225209339563144}, \
+{-0.4338837391175581, -0.9009688679024191}}]],
+      RegularPolygon[7]]},
+    ImageSize->Tiny], ",", 
+   GraphicsBox[
+    {RGBColor[
+     0.47256514319643905`, 0.8071608019072496, 0.011835462798345686`], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{Rational[1, 2], Rational[-1, 2] 3^Rational[1, 2]}, {1, 0}, {
+         Rational[1, 2], Rational[1, 2] 3^Rational[1, 2]}, {
+         Rational[-1, 2], Rational[1, 2] 3^Rational[1, 2]}, {-1, 0}, {
+         Rational[-1, 2], Rational[-1, 2] 3^Rational[1, 2]}}, {{
+         0.5, -0.8660254037844386}, {1, 0}, {0.5, 0.8660254037844386}, {-0.5, 
+         0.8660254037844386}, {-1, 0}, {-0.5, -0.8660254037844386}}]],
+      RegularPolygon[6]]},
+    ImageSize->Tiny], ",", 
+   GraphicsBox[
+    {RGBColor[
+     0.31687607664090467`, 0.7898040268806654, 0.011978005829703653`], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{(Rational[5, 8] + Rational[-1, 8] 5^Rational[1, 2])^
+          Rational[1, 2], 
+          Rational[1, 4] (-1 - 5^Rational[1, 2])}, {(Rational[5, 8] + 
+           Rational[1, 8] 5^Rational[1, 2])^Rational[1, 2], 
+          Rational[1, 4] (-1 + 5^Rational[1, 2])}, {0, 
+         1}, {-(Rational[5, 8] + Rational[1, 8] 5^Rational[1, 2])^
+           Rational[1, 2], 
+          Rational[1, 4] (-1 + 
+           5^Rational[1, 2])}, {-(Rational[5, 8] + 
+            Rational[-1, 8] 5^Rational[1, 2])^Rational[1, 2], 
+          Rational[1, 4] (-1 - 5^Rational[1, 2])}}, {{
+         0.5877852522924731, -0.8090169943749475}, {0.9510565162951535, 
+         0.30901699437494745`}, {0, 1}, {-0.9510565162951535, 
+         0.30901699437494745`}, {-0.5877852522924731, -0.8090169943749475}}]],
+      RegularPolygon[5]]},
+    ImageSize->Tiny], ",", 
+   GraphicsBox[
+    {RGBColor[0.3912763899960767, 0.45890217635844865`, 0.4588448829532328], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{2^Rational[-1, 2], -2^Rational[-1, 2]}, {
+         2^Rational[-1, 2], 2^Rational[-1, 2]}, {-2^Rational[-1, 2], 2^
+          Rational[-1, 2]}, {-2^Rational[-1, 2], -2^Rational[-1, 2]}}, {{
+        0.7071067811865475, -0.7071067811865475}, {0.7071067811865475, 
+        0.7071067811865475}, {-0.7071067811865475, 
+        0.7071067811865475}, {-0.7071067811865475, -0.7071067811865475}}]],
+      RegularPolygon[4]]},
+    ImageSize->Tiny], ",", 
+   GraphicsBox[
+    {RGBColor[0.7275167860288843, 0.790566279505035, 0.2632690904403443], 
+     InterpretationBox[
+      PolygonBox[
+       NCache[{{Rational[1, 2] 3^Rational[1, 2], Rational[-1, 2]}, {0, 1}, {
+         Rational[-1, 2] 3^Rational[1, 2], Rational[-1, 2]}}, {{
+         0.8660254037844386, -0.5}, {0, 1}, {-0.8660254037844386, -0.5}}]],
+      RegularPolygon[3]]},
+    ImageSize->Tiny]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8249638332612715`*^9, {3.824963879765535*^9, 3.8249638875825505`*^9}, {
+   3.8249639654415293`*^9, 3.8249640243889437`*^9}, {3.824964141834863*^9, 
+   3.8249641452786393`*^9}, {3.824964196511323*^9, 3.824964205471351*^9}},
+ CellLabel->"Out[71]=",ExpressionUUID->"d8facdf7-bf52-43dd-ab1b-3430d82cd1c0"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8249634850763206`*^9, 
+  3.824963512455742*^9}},ExpressionUUID->"906143a2-2251-4352-914d-\
+12687b137651"]
 },
-WindowSize->{1920, 997},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{788, 832},
+WindowMargins->{{Automatic, 120}, {-13, Automatic}},
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -92,7 +303,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 3114, 56, 143, "Input",ExpressionUUID->"103c8287-f6c2-478d-9fc1-e5f66b49d4c3"]
+Cell[CellGroupData[{
+Cell[580, 22, 4947, 103, 466, "Input",ExpressionUUID->"e705d46e-d026-4a5a-b4c1-3a8bc5d84178"],
+Cell[5530, 127, 7827, 154, 244, "Output",ExpressionUUID->"d8facdf7-bf52-43dd-ab1b-3430d82cd1c0"]
+}, Open  ]],
+Cell[13372, 284, 154, 3, 28, InheritFromParent,ExpressionUUID->"906143a2-2251-4352-914d-12687b137651"]
 }
 ]
 *)
